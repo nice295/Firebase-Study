@@ -12,49 +12,69 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="186dp"
-        tools:layout_editor_absoluteY="92dp"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:id="@+id/textEmotion"
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         tools:layout_constraintLeft_creator="0"
         app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="16dp"
         tools:layout_constraintTop_creator="0"
         app:layout_constraintRight_toRightOf="@+id/activity_main"
-        tools:layout_constraintRight_creator="0"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
-        tools:layout_constraintBottom_creator="0"
-        app:layout_constraintVertical_bias="0.19" />
+        tools:layout_constraintRight_creator="0" />
 
     <Button
         android:text="Happy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/buttonHappy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="447dp"
-        android:id="@+id/buttonHappy"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         tools:layout_constraintLeft_creator="0"
         app:layout_constraintBottom_toBottomOf="@+id/activity_main"
         android:layout_marginBottom="16dp"
-        tools:layout_constraintBottom_creator="0" />
+        tools:layout_constraintBottom_creator="0"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
 
     <Button
         android:text="Gloomy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/buttonGloomy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:layout_editor_absoluteX="269dp"
         tools:layout_editor_absoluteY="447dp"
-        android:id="@+id/buttonGloomy"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintTop_toTopOf="@+id/buttonHappy"
-        tools:layout_constraintTop_creator="0"
         app:layout_constraintRight_toRightOf="@+id/activity_main"
         android:layout_marginRight="16dp"
         android:layout_marginEnd="16dp"
-        tools:layout_constraintRight_creator="0" />
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="0"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="21dp"
+        android:id="@+id/progressBar"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/textEmotion"
+        tools:layout_constraintBottom_creator="0" />
 
 </android.support.constraint.ConstraintLayout>
