@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.google.android.gms.common.SignInButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -41,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         mButtonHappy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myRef.setValue("Happy");
+                myRef.setValue(getString(R.string.happy));
             }
         });
         mButtonGloomy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myRef.setValue("Gloomy");
+                myRef.setValue(getString(R.string.gloomy));
             }
         });
     }

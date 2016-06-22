@@ -25,7 +25,7 @@
         tools:layout_constraintRight_creator="0" />
 
     <Button
-        android:text="Happy"
+        android:text="@string/happy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonHappy"
@@ -43,7 +43,7 @@
         android:textColor="@android:color/white" />
 
     <Button
-        android:text="Gloomy"
+        android:text="@string/gloomy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonGloomy"

@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Firebase Study</string>
+    <string name="app_name">Firebase - Get/set one data</string>
+    <string name="happy">Happy</string>
+    <string name="gloomy">Gloomy</string>
 </resources>

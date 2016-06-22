@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Firebase - 데이터 하나 읽고 쓰기</string>
+    <string name="happy">행복해</string>
+    <string name="gloomy">우울해</string>
+</resources>
