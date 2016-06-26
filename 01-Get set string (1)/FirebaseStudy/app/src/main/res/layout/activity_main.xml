@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nice295.firebasestudy.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/textEmotion"
+        app:layout_constraintLeft_toLeftOf="@+id/progressBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="32dp"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/progressBar"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="1" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:id="@+id/progressBar"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="32dp"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSave"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="@string/save"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="0" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="453dp"
+        android:id="@+id/editText"
+        android:hint="@string/new_title"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/buttonSave"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="0" />
+
+</android.support.constraint.ConstraintLayout>

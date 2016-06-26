@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Firebase - Get/set one data</string>
+    <string name="save">SAVE</string>
+    <string name="new_title">New title</string>
+</resources>

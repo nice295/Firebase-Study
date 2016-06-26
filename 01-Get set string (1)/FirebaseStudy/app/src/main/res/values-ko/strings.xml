@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Firebase - 데이터 하나 읽고 쓰기</string>
+    <string name="save">저장</string>
+</resources>
