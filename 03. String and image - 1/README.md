@@ -6,11 +6,13 @@ Design
 ![Design](./String and image - 1.png)
 
 
+
 Flow
 -------------
 
 1. String 하나를 읽어와서 보여준다.
 2. URL을 가지고 와서 그 URL의 사진을 보여준다.
+
 
 
 Firebase database tree
@@ -19,6 +21,7 @@ Key    | Value
 ------ | ---
 string | "This is a title."
 url    | "http://www.blahblah.com/image.jpg"
+
 
 
 Image 가지고 오기
@@ -33,6 +36,7 @@ dependencies {
   ...
 }
 ```
+
 
 ####How to use library
 ```
