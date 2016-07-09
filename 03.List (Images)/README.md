@@ -1,4 +1,8 @@
-#스터디 #3
-## Image 다루기
+Load the list with images
+===================
 
-![GitHub Logo](./03 - Images.png)
+Design
+-------------
+![Design](./design.png)
+
+* Title, sub-title and image in list item

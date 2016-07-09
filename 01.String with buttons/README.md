@@ -1,13 +1,16 @@
-#스터디 #1
-## String get & set 구현
+Read and write a string from Firebase
+===
 
+Design
+---
 ![Design](./01 - Set get string.png)
 
+- Text view: To get the string from Firebase
+- Buttons: To change the predifed strings into Firebase
 
-1. 안드로이드 프로젝트 생성
-2. Firebase SDK 설치
-   https://firebase.google.com/docs/android/setup
-3. Layout design
-4. Firebase reference
-5. Add sample data in the firebase server
-6. Add set data code
+Firebase database tree
+---------------------------------
+
+Key    | Value
+------ | ---
+string | "This is a title."

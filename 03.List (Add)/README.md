@@ -1,4 +1,14 @@
-#스터디 #2
-## Add list: 리스트에 추가하기
+Load the list and add a item
+===================
 
-![GitHub Logo](./02 - Add list.png)
+Design
+-------------
+![Design](./design.png)
+
+Flow
+---
+![Flow](./flow.gif)
+
+1. Load the list
+2. Add a new item
+3. Reload the list with new one

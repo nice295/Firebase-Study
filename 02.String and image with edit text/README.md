@@ -1,8 +1,9 @@
-#스터디 #1
-## String get & set 구현
+Read and write URL string and load the Image with the URL
+===================
 
-![Design](./String and Image.png)
-
+Design
+-------------
+![Design](./design.png)
 
 1. Input new text and tap the SAVE button
 2. The text shoud be save into the database of Firebase

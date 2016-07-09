@@ -1,10 +1,9 @@
-String과 Image URL 읽어오기
+Read URL string and load the Image with the URL
 ===================
 
 Design
 -------------
-![Design](./String and image - 1.png)
-
+![Design](./design.png)
 
 
 Flow
