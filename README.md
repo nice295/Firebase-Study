@@ -1,1 +1,3 @@
-#한이음 프로젝트를 위한 작은 스터디 공간
+Study all of the Firebase for quick and dirty mobile service projects
+====
+
