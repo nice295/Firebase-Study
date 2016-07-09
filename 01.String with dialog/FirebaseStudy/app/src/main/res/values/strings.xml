@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Firebase - String with dialog</string>
+    <string name="add">ADD</string>
+    <string name="new_string">New string</string>
+    <string name="add_new_string">Add new string</string>
+    <string name="cancel">Cancel</string>
+</resources>
