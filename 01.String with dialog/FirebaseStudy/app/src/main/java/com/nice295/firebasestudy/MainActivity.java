@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference myRef = database.getReference("string-dialog");
 
+    private FirebaseAnalytics mFirebaseAnalytics;
+
     private TextView mTextEmotion;
     private ProgressBar mProgressBar;
 
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         // Views
         mTextEmotion = (TextView) findViewById(R.id.textEmotion);
         mProgressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
     }
 
     @Override
@@ -73,7 +78,18 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         showAddDialog();
+        logEvent();
         return true;
+    }
+
+    private void logEvent() {
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "ACTION");
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "ADD");
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "string");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+
+        mFirebaseAnalytics.setUserProperty("favorite_food", "pizza");
     }
 
     private void showAddDialog() {
